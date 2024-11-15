@@ -1,0 +1,9 @@
+export fn _start(): void {
+    let ret = main();
+
+    @asm(
+        "syscall",
+        "=r,{rax},{rdi}",
+        60, ret
+    );
+}

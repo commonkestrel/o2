@@ -5,4 +5,9 @@ description = "Rust, without the iron-clad structure the borrow-checker provides
 edition = "2021"
 
 [dependencies]
+async-std = "1.13.0"
+clap = { version = "4.5.21", features = ["derive"] }
+colored = "2.1.0"
 inkwell = { version = "0.5", features = ["llvm18-0"] }
+lazy-regex = "3.3.0"
+logos = "0.14.2"

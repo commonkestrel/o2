@@ -1,0 +1,7 @@
+pub struct Vec<T> has clone {
+    array: *mut T,
+    len: usize,
+    capacity: usize,
+}
+
+pub fn Vec
